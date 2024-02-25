@@ -1,8 +1,8 @@
-package com.itheima;
+package com.itheima.a01jdk7datedemo;
 
 import java.util.Date;
 
-public class a01jdk7datedemo {
+public class A01_DateDemo1 {
     public static void main(String[] args) {
         /*
             public Date()                           创建Date对象，表示当前时间
