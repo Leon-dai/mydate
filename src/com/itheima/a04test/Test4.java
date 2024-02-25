@@ -2,6 +2,8 @@ package com.itheima.a04test;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 public class Test4 {
@@ -22,6 +24,11 @@ public class Test4 {
         long time = todayTime - birthdayTime;
         System.out.println(time / 1000 / 60 / 60 / 24);
 
+        //JDK8
+        LocalDate ld1 = LocalDate.of(2000, 1, 1);
+        LocalDate ld2 = LocalDate.now();
+        long days = ChronoUnit.DAYS.between(ld1, ld2);
+        System.out.println(days);
 
     }
 }
